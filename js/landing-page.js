@@ -12,8 +12,8 @@ function validate(){
 }
 
 
-plyerName.addEventListener('keyup' ,() =>{
-    if(plyerName.value ===''){
+playerName.addEventListener('keyup' ,() =>{
+    if(playerName.value ===''){
         validate()
     }
     else{
@@ -22,7 +22,7 @@ plyerName.addEventListener('keyup' ,() =>{
 })
 
 enterToGame.addEventListener('click',() => {
-    if(plyerName.value ===''){
+    if(playerName.value ===''){
         validate()
     }
     else{
@@ -31,10 +31,5 @@ enterToGame.addEventListener('click',() => {
         window.location.href = '../html/catagory-selection-page.html'
         
     }
-    
-   
-
-
-    // 
     
 })

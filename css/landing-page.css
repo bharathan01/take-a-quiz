@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: #6BBFA0;
+    background-color: #a6efd4;
 }
 header{
     width: 100%;
@@ -59,7 +59,7 @@ section{
     width: 50%;
     height: 40px;
     border: none;
-    border-bottom: 2px solid #6BBFA0;
+    border-bottom: 2px solid #a6efd4;
     font-size: 1.5em;
     outline: none;
 }
@@ -71,7 +71,7 @@ section{
     height: 30px;
     margin-top: 20px;
     border: none;
-    background-color: #6BBFA0;
+    background-color: #a6efd4;
     color: #fff;
     border-radius: 7px;
 }
