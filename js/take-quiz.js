@@ -1,7 +1,7 @@
 const nums = document.querySelectorAll('.nums span');
 const counter = document.querySelector('.counter');
 const finalMessage = document.querySelector('.final');
-let API_KEY = 'ccegaZ4XUnyeubUluTuoT6yluWYfosjRQ6t52oNb'
+let API_KEY = 'null'
 let category = 'Linux'
 
 runAnimation();
