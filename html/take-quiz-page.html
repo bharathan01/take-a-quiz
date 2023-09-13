@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/take-quiz.css">
     <script src="../js/take-quiz.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 </head>
 <body>
     <div class="counter">
@@ -20,16 +22,20 @@
       <div class="final">
         <div class="quiz">
             <div class="questine">
-                <span class="q-no"><h3>1. </h3></span><span class="q-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, maiores?<span>
+                <span class="q-no"><h3 id="qust-no">1. </h3></span><span class="q-content" id="questine">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, maiores?<span>
             </div>
             <div class="answer">
                 <ul>
-                    <li><span>a</span> <span>sdfsd</span></li>
-                    <li><span>a</span> <span>sgs</span></li>
-                    <li><span>a</span><span>sdgs</span></li>
-                    <li><span>a</span> <span>sdgsdg</span></li>
+                    <li><span id="options">A</span> <span id="answer"></span></li>
+                    <li><span id="options">B</span> <span id="answer"></span></li>
+                    <li><span id="options">C</span> <span id="answer"></span></li>
+                    <li><span id="options">D</span> <span id="answer"></span></li>
                 </ul>
-                <button class="btn" type="submit">Next</button>
+                <div class="btn-div">
+                    <button class="btn" type="submit" id="previous"><i class="fa-solid fa-circle-chevron-left" style="color: #ffffff;"></i></button>
+                    <button class="btn" type="submit" id="next"><i class="fa-solid fa-circle-chevron-right" style="color: #ffffff;"></i></button>
+                </div>
+                
             </div>
         </div>
       </div>
