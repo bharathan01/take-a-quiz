@@ -47,7 +47,7 @@ mainDiv.addEventListener('click' ,(el) =>{
         setCatagory(catData)
     }
     else{
-        const catData =el.target.childNodes[1].nodeValue
+        const catData = el.target.childNodes[1].nodeValue
         setCatagory(catData)
     }
 })

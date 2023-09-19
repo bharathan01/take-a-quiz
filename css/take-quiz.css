@@ -178,6 +178,9 @@ h4 {
 .answer ul li :nth-child(2):hover{
   background-color: #d6d5d5;
 }
+.answer ul li :nth-child(2):focus{
+  background-color: #d6d5d5;
+}
 .q-no{
   width: 30px;
 }
