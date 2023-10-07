@@ -43,6 +43,7 @@ const answers = document.querySelectorAll("#answer")
 const ans = document.querySelectorAll("#ans")
 let questineNum = 0;
 let score = 0;
+let checkedAns;
 
 
 async function getQuestines() {
@@ -83,6 +84,7 @@ function setQuestine(questine) {
   changeQustine(questineNum)
   nextQuestine.addEventListener('click', () => {
     changeQustine(questineNum += 1);
+    checkedAns = undefined
   })
   previousQuestine.addEventListener('click', () => {
     changeQustine(questineNum -= 1);
@@ -103,13 +105,16 @@ function getAnswer(checkAnswer,Qno) {
   const keys = Object.keys(correctAnswers)
   const ans_correct = keys[Qno]
   const ansValue = correctAnswers[ans_correct]
+  const correctValue = options[ansValue]
   ans.forEach((li) => {
     li.addEventListener('click', (event) => {
-      const checkedAns = event.target.textContent
-      if (checkedAns) {
-           for (const iterator of options) {
-                 console.log(iterator)
-           }
+      checkedAns = event.target.textContent
+      console.log(checkedAns)
+      if (checkedAns === correctValue) {
+        score +=1
+      }
+      else{
+        
       }
     })
   })
