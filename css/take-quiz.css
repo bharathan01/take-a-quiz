@@ -179,7 +179,8 @@ h4 {
   background-color: #d6d5d5;
 }
 .answer ul li :nth-child(2):focus{
-  background-color: #d6d5d5;
+  background-color: #6BBFA0;
+  color: white;
 }
 .q-no{
   width: 30px;

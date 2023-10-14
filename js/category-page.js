@@ -1,6 +1,6 @@
 const span = document.getElementById('player_name')
 const mainDiv= document.querySelector('.main-cat')
-const playerName = localStorage.getItem('plyerName')
+const playerName = localStorage.getItem('playerName')
 
 
 if(playerName == null){

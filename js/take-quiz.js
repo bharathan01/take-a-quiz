@@ -104,19 +104,24 @@ function getAnswer(checkAnswer,Qno) {
   });
   const keys = Object.keys(correctAnswers)
   const ans_correct = keys[Qno]
+  const selected = []
   const ansValue = correctAnswers[ans_correct]
   const correctValue = options[ansValue]
   ans.forEach((li) => {
     li.addEventListener('click', (event) => {
       checkedAns = event.target.textContent
-      console.log(checkedAns)
+      selectedOption(selected,checkedAns)
       if (checkedAns === correctValue) {
         score +=1
       }
       else{
-        
       }
     })
   })
+}
+function selectedOption(selectedAnswer,checkedAns){
+   if(selectedAnswer == checkedAns){
+      
+   }
 }
 getQuestines()
