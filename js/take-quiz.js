@@ -66,6 +66,14 @@ function setQuestine(questine) {
       previousQuestine.disabled = true
     }
     else if (Qno >= 10) {
+      const change = document.getElementById('changeDiv')
+      change.style.display = 'none'
+      const div = document.createElement('div')
+      div.classList.add('quiz') 
+      const h2 = document.createElement('h1')
+      h2.textContent = `quiz over ${score} / 10`
+      div.appendChild(h2)
+      document.getElementById('scorDiv').appendChild(div)
       nextQuestine.disabled = true
     }
     else {
